@@ -13,9 +13,8 @@ Parámetros a configurar:
 	- path --> donde guardar las imágenes.
 
 El programa puede funcionar con o sin la funcion comprobarFichero().
-Si donde vamos a colocar la cámara tenemos algún otro sensor, con comprobarFichero() los podríamos tener sincronizados.
-Ejemplo: sensor de movimiento crea fichero, el programa solo guardaría imágenes en caso de estar este fichero.
-El problema está en que los cambios de luz se detectan también como movimiento.
+Si donde vamos a colocar la cámara tenemos algún otro sensor, con comprobarFichero() los podríamos tener sincronizados; por ejemplo: sensor de apertura de puerta crea fichero, el programa solo guardaría imágenes en caso de existir este fichero.
+El problema está en que los cambios de luz se detectan también como movimiento, por ello se recomienda tener otro sensor o en su defecto colocar la cámara en un lugar donde no se produzcan cambios de luz.
 
 -------------------------------------------
 
@@ -33,4 +32,4 @@ We need to configure the next parameters:
 	- nombre --> name of images. Default: actaul date of your system.
 	- path --> path where you want to save the images.
 
-This program can work with comprobarFichero() function or not. This function is only use to synchronize the program with other sensor, like a motion sensor. We use this because the program can detect the changes of lights like a motion, so we need another sensor to detect the movement and then the camera takes the pictures.
+This program can work with comprobarFichero() function or not. This function is only use to synchronize the program with other sensor, like a motion sensor. We use this because the program can detect the changes of lights like a motion, so we need another sensor to detect, for example, if a door was opened, then, this sensor create a file that allows the camera to takes pictures.
