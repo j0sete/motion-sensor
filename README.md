@@ -6,6 +6,7 @@ Usando una raspberry pi y una cámara web podemos tener una cámara de vigilanci
 ****Es necesario instalar las librerías OpenCV para Python.****
 
 Parámetros a configurar:
+
 	- archivo --> donde se encuentra el archivo/s que cree un sensor de movimiento.
 	- tamanoMax --> el tamaño que queremos para nuestras imágenes, esto dependerá de lo buena que sea su cámara.
 	- nombre --> los nombres que tendrán las imagenes guardadas, por defecto es la fecha y hora del sistema.
