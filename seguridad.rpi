@@ -7,16 +7,16 @@
 #          --end  --> for close the program
 ### -----------------------------------------------"
 
-if [ $1 = "--init" ]
+if [ $1 = "start" ]
 then
 	echo "Starting recording..."
 	sudo ./cam-seg.py &
-elif [ $1 = "--end" ]
+elif [ $1 = "stop" ]
 then
 	echo "Ending recording..."
-	sudo touch close
+	sudo touch stop
 	sleep 1
-	sudo rm -f close
+	sudo rm -f stop
 else
 	echo "Wrong option/s"
 	echo "Possible options: "

@@ -1,9 +1,7 @@
 #!/usr/bin/python
 
 import numpy as np
-import cv2
-import cv
-import time
+import cv2, cv, time
 
 ### FUNCTIONS
 
@@ -22,7 +20,7 @@ def comprobarFichero():
 
 def cerrar():
   
-  archivo = "close"
+  archivo = "stop"
   
   try:
     fichero = open(archivo)
