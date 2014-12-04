@@ -18,8 +18,8 @@ Usando una raspberry pi y una cámara web podemos tener una cámara de vigilanci
 
 <h3>Funcionamiento</h3>
 
-* Para iniciarlo: Ejecutar el script seguridad.rpi con la opción --init
-* Para finalizarlo: Ejecutar el script seguridad.rpi con la opción --end
+* Para iniciarlo: Ejecutar el script seguridad.rpi con la opción start
+* Para finalizarlo: Ejecutar el script seguridad.rpi con la opción stop
 
 
 <h3>Datos Adicionales</h3>
@@ -47,8 +47,8 @@ Using a raspberry pi with a webcam we obtain a surveillance camera.
 
 <h3>How to running</h3>
 
-* Start: Execute script seguridad.rpi whit --init option.
-* End: Execute script seguridad.rpi with --end option.
+* Start: Execute script seguridad.rpi whit start option.
+* End: Execute script seguridad.rpi with stop option.
 
 <h3>Additional data</h3>
 
