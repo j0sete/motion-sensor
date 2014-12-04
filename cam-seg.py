@@ -22,7 +22,7 @@ def comprobarFichero():
 
 def cerrar():
   
-  archivo = "/path/to/close/file"
+  archivo = "close"
   
   try:
     fichero = open(archivo)
