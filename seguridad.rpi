@@ -1,22 +1,26 @@
 #!/bin/bash
 
-echo "-----------------------------------------------"
-echo "Author: Jose Manuel Rodriguez Montes"
-echo ""
-echo "Options: --init --> for initialize the program"
-echo "         --end  --> for close the program"
-echo "-----------------------------------------------"
+### -----------------------------------------------
+# Author: Jose Manuel Rodriguez Montes
+#
+# Options: --init --> for initialize the program
+#          --end  --> for close the program
+### -----------------------------------------------"
 
 if [ $1 = "--init" ]
 then
-	sudo ./cam-seg.py &
 	echo "Starting recording..."
-fi
-if [ $1 = "--end" ]
+	sudo ./cam-seg.py &
+elif [ $1 = "--end" ]
 then
+	echo "Ending recording..."
 	sudo touch close
 	sleep 1
 	sudo rm -f close
-	echo "Ending recording..."
+else
+	echo "Wrong option/s"
+	echo "Possible options: "
+	echo "   --init --> for initialize the program"
+	echo "   --end  --> for close the program"
 fi
 
