@@ -16,7 +16,7 @@ El programa puede funcionar con o sin la funcion comprobarFichero().
 Si donde vamos a colocar la cámara tenemos algún otro sensor, con comprobarFichero() los podríamos tener sincronizados; por ejemplo: sensor de apertura de puerta crea fichero, el programa solo guardaría imágenes en caso de existir este fichero.
 El problema está en que los cambios de luz se detectan también como movimiento, por ello se recomienda tener otro sensor o en su defecto colocar la cámara en un lugar donde no se produzcan cambios de luz.
 
-update: Nueva funcion de cerrado, antes era necesario matar el programa con el comando 'kill' de bash, si ejecutábamos en background, o, en caso contrario, pulsando 'q'; ahora, simplemente creando un fichero, lo cerraremos.
+UPDATE: Nueva funcion de cerrado, antes era necesario matar el programa con el comando 'kill' de bash, si ejecutábamos en background, o, en caso contrario, pulsando 'q'; ahora, simplemente creando un fichero, lo cerraremos.
 
 -------------------------------------------
 
