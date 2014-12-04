@@ -1,3 +1,7 @@
+-------------------------------------------
+
+IMPORTANTE: Se está desarrollando un makefile que instala todo lo necesario para poder ejecutar el programa, en estos días estará listo.
+
 Autor: José Manuel Rodríguez Montes
 
 Código python para detectar movimiento.
@@ -27,6 +31,8 @@ El problema está en que los cambios de luz se detectan también como movimiento
 
 
 -------------------------------------------
+
+IMPORTANT: A makefile to install all needed things are been created at this time. It will soon be available.
 
 Author: José Manuel Rodríguez Montes
 
