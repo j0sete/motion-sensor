@@ -5,10 +5,11 @@ import cv2
 import cv
 import time
 
+### FUNCTIONS
+
 def comprobarFichero():
   
-  existe = False
-  archivo = "//path/a/algun/fichero"
+  archivo = "/path/a/algun/fichero"
   
   try: 
     fichero = open(archivo) 
@@ -19,12 +20,28 @@ def comprobarFichero():
     
   return existe
 
+def cerrar():
+  
+  archivo = "/path/to/close/file"
+  
+  try:
+    fichero = open(archivo)
+    fichero.close()
+    existe = True
+  except:
+    existe = False
+    
+  return existe
+
+
+### MAIN
+
 tamanoMax = 400
 movimiento = False
 
 cam = cv2.VideoCapture(0)
 
-for x in xrange(1,100):
+for x in range(100):
   ret, frame = cam.read()
   
 fgbg = cv2.BackgroundSubtractorMOG()
@@ -43,12 +60,12 @@ while True:
     columnas = cv2.reduce(fgmask,0,cv.CV_REDUCE_MAX)
     filas = cv2.reduce(fgmask,1,cv.CV_REDUCE_MAX)
     
-    for x in xrange(1, len(columnas[0])):
+    for x in range(len(columnas[0])):
       if columnas[0][x] > 0:
 	movimiento = True
 	break
     if movimiento == False:
-      for x in xrange(1, len(filas)):
+      for x in range(len(filas)):
 	if filas[x,0] > 0:
 	  movimiento = True
 	  break
@@ -60,7 +77,5 @@ while True:
     
     movimiento = False
       
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cerrar():
       break
-    
-cv2.destroyAllWindows()
