@@ -7,7 +7,7 @@ Autor: José Manuel Rodríguez Montes
 Código python para detectar movimiento.
 Usando una raspberry pi y una cámara web podemos tener una cámara de vigilancia.
 
-****Es necesario instalar las librerías OpenCV para Python.****
+**Es necesario instalar las librerías OpenCV para Python.**
 
 - Parámetros a configurar:
 
@@ -39,7 +39,7 @@ Author: José Manuel Rodríguez Montes
 Python code for detect movement.
 Using a raspberry pi with a webcam we obtain a surveillance camera.
 
-****It's necesary install OpenCV libs for Python.****
+**It's necesary install OpenCV libs for Python.**
 
 - Configuration parameters:
 
