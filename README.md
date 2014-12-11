@@ -42,7 +42,8 @@ Using a raspberry pi with a webcam we obtain a surveillance camera.
 **It's necesary install OpenCV libs for Python.** For that you can follow this steps of Robert Castle: http://robertcastle.com/2014/02/installing-opencv-on-a-raspberry-pi/
 
 **Another program you need is ffmpeg** for convert the images into a video:
-   sudo apt-get install ffmpeg
+   
+     sudo apt-get install ffmpeg
 
 <h3>Configuration parameters</h3>
 
