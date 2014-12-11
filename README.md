@@ -10,7 +10,8 @@ Usando una raspberry pi y una cámara web podemos tener una cámara de vigilanci
 **Es necesario instalar las librerías OpenCV para Python.** Para ello puedes seguir esta guía de Robert Castle: http://robertcastle.com/2014/02/installing-opencv-on-a-raspberry-pi/
 
 **Otro programa necesario es ffmpeg** para la creación de videos a partir de imágenes:
-   sudo apt-get install ffmpeg
+   
+     sudo apt-get install ffmpeg
 
 <h3>Parámetros a configurar</h3>
 
