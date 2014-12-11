@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import numpy as np
-import cv2, cv, time
+import cv2, cv, time, os
 
 ### FUNCTIONS
 
@@ -34,8 +34,11 @@ def cerrar():
 
 ### MAIN
 
+os.chdir("/path/where/images/are/saving/")
+
 tamanoMax = 400
 movimiento = False
+count = 0
 
 cam = cv2.VideoCapture(0)
 
@@ -69,9 +72,18 @@ while True:
 	  break
     
     if movimiento == True and comprobarFichero():
-      nombre = time.strftime("%y%m%d-%H:%M:%S")+".jpg"
+      nombre = "namepattern-"time.strftime("%y%m%d-%H:%M:%S")+".jpg"
       path="/path/donde/guardar/imagenes/"+nombre
       cv2.imwrite(path,frame)
+      count += 1
+    
+    if count > 3:
+      os.system("sudo ffmpeg -r 1/5 -i /path/where/imgages/are/saving/with_namepatter-*.jpg -r 30 -pix_fmt yuv420p /path/where/vid/are/going/to/save/nameofvid.mp4")
+      for filename in os.listdir("."):
+	if filename.startswith("outvideo")
+	  name = "videoname"+time.strftime("%y%m%d-%H:%M:%S")+".mp4"
+	  os.rename(filename,name)
+      count = 0
     
     movimiento = False
       
